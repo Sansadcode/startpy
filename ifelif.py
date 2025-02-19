@@ -49,3 +49,24 @@ else:
             print("nested: else")
     else:
         print("else")
+
+#comparison
+a = 200
+b = 53
+c = 500
+if a > b and c > a:
+    print("both conditions are true")
+a = 200
+b = 33
+c = 400
+if a > b or a > c:
+    print("at least one of the condition is true")
+
+# nesting if condition
+x = 19
+if x > 10:
+    print("above ten,")
+    if x == 11:
+         print("but not above 20")
+    else:
+        print("not 10")
