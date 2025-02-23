@@ -48,15 +48,20 @@
 #     return in * out
 #     print(fun(3))
 
-try:
-    first_prompt = input("enter the first vlaue")
-    a = len(first_prompt)
-    second_prompt = input("enter the second value")
-    b = len(second_prompt) * 2
-    print(a//b)
-except ZeroDivisionError:
-    print("Do not divide by zero")
-except ValueError:
-    print("wrong value")
-except:
-    print("error.error")
+# try:
+#     first_prompt = input("enter the first vlaue")
+#     a = len(first_prompt)
+#     second_prompt = input("enter the second value")
+#     b = len(second_prompt) * 2
+#     print(a//b)
+# except ZeroDivisionError:
+#     print("Do not divide by zero")
+# except ValueError:
+#     print("wrong value")
+# except:
+#     print("error.error")
+
+fruits = {'kiwi', 'cherry', 'mango','banana'}
+expired_fruits = {'cherry', 'mango'}
+fruits -= expired_fruits
+print(fruits)
