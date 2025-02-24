@@ -17,6 +17,7 @@ print(my_tuple[:-2])
 for elem in my_tuple:
     print(elem)
     #output 1 # 1000 # (10, 100, 1000)  # (1, 10) #1 # 10 # 100 # 1000
+
 # the below code will give attribute error as tuples cannot be modified
 my_tuple = (1, 10, 100, 1000)
 
@@ -52,3 +53,20 @@ print(t1, t2, t3)
 #Note: the example presents one more important fact: a tuple's elements can be variables,
 # not only literals. Moreover, they can be expressions if they're on the right side of the
 # assignment operator.
+
+# you can use the built in function for tuple to make tuple
+my_tuple = tuple((1, 2, "string"))
+print(my_tuple)
+
+my_list = [2, 4, 6]
+print(my_list)    # outputs: [2, 4, 6]
+print(type(my_list))    # outputs: <class 'list'>
+tup = tuple(my_list)
+print(tup)    # outputs: (2, 4, 6)
+print(type(tup))    # outputs: <class 'tuple'>
+
+# you can also convert tuple to list by using list()
+tup = 1, 2, 3,
+my_list = list(tup)
+print(type(my_list))    # outputs: <class 'list'>
+

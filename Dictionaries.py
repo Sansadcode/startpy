@@ -64,6 +64,15 @@ dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
 dictionary.update({"duck": "canard"})
 print(dictionary)
 
+#"glue" the two dictionaries (d1 and d2) together and create a new one (d3)
+d1 = {'Adam Smith': 'A', 'Judy Paxton': 'B+'}
+d2 = {'Mary Louis': 'A', 'Patrick White': 'C'}
+d3 = {}
+
+for item in (d1, d2):
+    d3.update(item)
+
+print(d3)
 #removing an item from dictionary
 dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
 
@@ -76,6 +85,49 @@ dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
 dictionary.popitem()
 print(dictionary)    # outputs: {'cat': 'chat', 'dog': 'chien'}
 
+
+#del specific item or entire entry del() -- clear()
+pol_eng_dictionary = {
+    "zamek": "castle",
+    "woda": "water",
+    "gleba": "soil"
+    }
+
+print(len(pol_eng_dictionary))    # outputs: 3
+del pol_eng_dictionary["zamek"]    # remove an item
+print(len(pol_eng_dictionary))    # outputs: 2
+
+pol_eng_dictionary.clear()   # removes all the items
+print(len(pol_eng_dictionary))    # outputs: 0
+
+del pol_eng_dictionary    # removes the dictionary
+
+#To copy the dictionary copy()
+pol_eng_dictionary = {
+    "zamek": "castle",
+    "woda": "water",
+    "gleba": "soil"
+    }
+
+copy_dictionary = pol_eng_dictionary.copy()
+
+#convert tuple to dictionary dict()
+colors = (("green", "#008000"), ("blue", "#0000FF"))
+
+colors_dictionary = dict(colors)
+print(colors_dictionary)
+
+###########
+dictionary = {}
+my_list = ['a', 'b', 'c', 'd']
+
+for i in range(len(my_list) - 1):
+    dictionary[my_list[i]] = (my_list[i], )
+
+for i in sorted(dictionary.keys()):
+    k = dictionary[i]
+    # Insert your code here.
+    print(k)
 
 
 
