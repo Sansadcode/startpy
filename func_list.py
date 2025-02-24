@@ -85,3 +85,42 @@ print(tup)
 
 
 
+
+x = 1
+y = 2
+x, y, z = x, x, y
+z, y, z = x, y, z
+
+print(x, y, z)
+#
+# a = 1
+# b = 0
+# a = a ^ b
+# b = a ^ b
+# a = a ^ b
+#
+# print(a, b)
+# nums = [1, 2, 3]
+# vals = nums
+# del vals[:]
+# print(vals)
+#
+#
+# x = int(input())
+# y = int(input())
+# x = x % y
+# x = x % y
+# y = y % x
+# print(y)
+#
+# y = input()
+# x = input()
+# print(x + y)
+def fun(x, y):
+    if x == y:
+        return x
+    else:
+        return fun(x, y-1)
+
+print(fun(0, 4))
+
